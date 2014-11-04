@@ -1,9 +1,11 @@
-# University of Michigan Branded Canvas Skin
+# UM Branded Canvas Skin
 
 ## Usage
-1. Deploy to expected location
-2. The end
-----
+
+Deploy to expected location
+
+The end
+
 ## Notes
 There are two css files, one for beta (to which beta should be pointed), and the production version to which production should be pointed:
 
