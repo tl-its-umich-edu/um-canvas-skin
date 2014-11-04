@@ -1,0 +1,210 @@
+/* Replace the gray background with something that matches your colors.  You can use .pngs with alpha transparency.*/
+#header {
+    background: #09274c;
+    background: -moz-linear-gradient(left, #09274c 0%, #0c3669 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#09274c), color-stop(100%,#0c3669));
+    background: -webkit-linear-gradient(left, #09274c 0%,#0c3669 100%);
+    background: -o-linear-gradient(left, #09274c 0%,#0c3669 100%);
+    background: -ms-linear-gradient(left, #09274c 0%,#0c3669 100%);
+    background: linear-gradient(to right, #09274c 0%,#0c3669 100%);
+    border-bottom:3px solid #FACB04;
+    box-shadow: 0px 4px 10px #999;
+}
+
+#header.no-user {
+    background-position: 0 -25px;
+    min-height: 66px;
+}
+#wrapper-container {
+}
+/*replace the canvas logo with your logo*/
+#header-logo, #header.no-user #header-logo {
+  background: url("blockm-sm-pilot.png") no-repeat scroll 0 0 transparent;
+  top:15px;
+  height: 41px;
+  left: 10px;
+  width: 55px;
+}
+
+
+/*if you replace the left canvas logo, move a smaller one to the right side of the header--I made the image gray first*/
+#header.no-user #header-logo-secondary, #header-logo-secondary {
+  background: url("ctools-banner-sm-pilot-canvas3.png") no-repeat scroll 0 0 transparent;
+  top: 15px;
+  height: 56px;
+  position: absolute;
+  left: 65px;
+  width: 170px;
+  display: block;
+}
+
+/*if your logo is bigger, you can make room like this*/
+#menu { margin-left: 250px; }
+
+/*change the identity bar (the area that says User Inbox Settings Logout Help)*/
+#identity {
+  background-image: none;
+  background: #ffcb05
+}
+
+
+/*change the color of the identity text*/
+#identity a { color: black; }
+/*change the color of the circle around the number of unread inbox messages*/
+#identity .inbox a .unread-messages-count { background-color: #F2F0DD; }
+#identity .inbox a .unread-messages-count { color: #000;padding: 0 5px }
+#identity #identity-help-container a { color: black; }
+
+/*change the color of the menu items (courses & groups etc.). If the text looks fuzzy, remove the text shadow.*/
+.menu-item .menu-item-title, .menu-item .menu-item-no-drop {
+  color: #FAFBF4;
+  text-shadow: none;
+}
+
+/*Desktop Login*/
+
+
+/*login background color*/
+
+/*change the background color and the color of 'stay signed in'*/
+#modal-box.login-box {
+    background: #00274c !important;
+}
+
+.login-options label {
+    color:#fff;
+}
+/*this will remove the extra canvas logo*/
+body.modal #modal-box.login-box h1 {
+  background: url("blockm-andlogo-pilot-canvas3.png") no-repeat scroll 20px 20px transparent;
+  height: 135px;
+  margin-top:10px;
+}
+
+
+
+/*login background image, if you are not using a background color*/
+
+/*change location of image and resize to match image height and width*/
+#modal-box-inner {
+  background: url("https://s3.amazonaws.com/account/myimage.png?v1") no-repeat;
+  height: 200px;
+  width: 680px;
+/*adjust to move image to left and top*/
+  margin-left: -15px;
+  margin-top: -15px;
+  color: #000066 !important;
+ }
+
+/*change the color of 'don't know your password'*/
+body.modal #modal-box.login-box a.btn { color: #000 !important; }
+
+/*change the color of the login button*/
+body.modal #modal-box .btn, body.modal #login-box .btn {
+  background-color: #fff;
+  color:#000;
+  text-shadow:none;
+}
+
+/*change the color of the login button*/
+body.modal #modal-box .btn, body.modal #login-box .btn {
+  background-color: #fff;
+  color:#000;
+  text-shadow:none;
+}
+
+#login_form .btn-primary, #login_form .btn-primary:hover {
+  background-color: #ae5321;
+  background-image: none;
+  border: none !important;
+}
+
+/*
+generic things
+*/
+
+a, #menu_enrollments .customListOpen {
+    color:#15c;
+}
+
+.list-view a.active, .list-view a.active:hover, .list-view a.active:focus, .menu-item-drop-column-list li a:hover, .menu-item-drop-column-list li a:focus  {
+    background-color:#fff;
+}
+.list-view a.active,.list-view > nav > ul > li > a:hover,.list-view > nav > ul > li > a:focus  {
+    background-color:#FFEEB0;
+}
+
+#skip_navigation_link {
+    background-color: #fff;
+    color: #000;
+}
+
+#skip_navigation_link:focus {
+    top:0;
+    left:200px;
+    padding:5px;
+    font-size:100%;
+    border-radius:0;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline:none;
+    color:#000;
+    text-decoration:none;
+}
+#skip_navigation_link:after {
+    content:" \2193";
+}
+
+
+/*CSS Override for Mobile Version*/
+
+/*update the image URL*/
+body{
+  background: url(https://hilary.instructure.com/images/blue/bg.jpg?1358195888);
+}
+
+#f1_container{
+  background: url(https://s3.amazonaws.com/SSL_Assets/hilary/header_logok-12.png) no-repeat center top;
+}
+
+
+.face{
+  background: url(https://s3.amazonaws.com/SSL_Assets/hilary/noisy_blue.png?v1);
+  border-radius: 0.3em;
+  box-shadow: 0px 4px 10px #999;
+}
+
+input{
+  background: #f3f3f3;
+  border-radius: 5px;
+  font-weight: normal;
+}
+/*
+button[type="submit"]{
+  border: none;
+  color: #fff;
+  text-shadow: 0 -1px 0 #36629b;
+}
+*/
+.flip-to-back, .flip-to-front{
+ text-shadow: 0 1px 0 #fff;
+  border: none;
+  border-radius: 6px;
+  background: #dddddd; /* Old browsers */
+  background: -moz-linear-gradient(top,  #dddddd 0%, #f3f3f3 50%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(50%,#f3f3f3)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #dddddd 0%,#f3f3f3 50%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #dddddd 0%,#f3f3f3 50%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #dddddd 0%,#f3f3f3 50%); /* IE10+ */
+  background: linear-gradient(to bottom,  #dddddd 0%,#f3f3f3 50%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#f3f3f3',GradientType=0 ); /* IE6-9 */
+  color: #888;
+}
+#identity .emphasize-name {
+  color:#c00
+}
+
