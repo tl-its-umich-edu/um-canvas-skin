@@ -79,6 +79,7 @@ body.modal #modal-box.login-box h1 {
   background: url("blockm-andlogo-pilot-canvas3.png") no-repeat scroll 20px 20px transparent;
   height: 135px;
   margin-top:10px;
+  width:100%;
 }
 
 
