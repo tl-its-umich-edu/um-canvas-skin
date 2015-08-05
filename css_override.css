@@ -128,11 +128,17 @@ a, #menu_enrollments .customListOpen {
     color:#15c;
 }
 
-.list-view a.active, .list-view a.active:hover, .list-view a.active:focus, .menu-item-drop-column-list li a:hover, .menu-item-drop-column-list li a:focus  {
-    background-color:#fff;
+.list-view > ul > li > a, .list-view > nav > ul > li > a {
+	color:#000;
 }
-.list-view a.active,.list-view > nav > ul > li > a:hover,.list-view > nav > ul > li > a:focus  {
+.list-view > ul > li > a:hover, .list-view > nav > ul > li > a:hover, .list-view > ul > li > a:focus, .list-view > nav > ul > li > a:focus,.list-view  ul#section-tabs > li > a.active:hover, .list-view   ul#section-tabs > li > a.active:focus {
+	 background-color:#FFEEB0;
+	 color:#000;
+}
+
+.list-view  ul#section-tabs > li > a.active {
     background-color:#FFEEB0;
+    color:#000;
 }
 
 #skip_navigation_link {
