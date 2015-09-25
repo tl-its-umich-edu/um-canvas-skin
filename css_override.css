@@ -70,10 +70,10 @@
 }
 /*this will remove the extra canvas logo*/
 body.modal #modal-box.login-box h1 {
-  background: url("blockm-andlogo-pilot-canvas3.png") no-repeat scroll 20px 20px transparent;
+  background: transparent url("um-canvas-login.png") no-repeat scroll 100px 33px;
   height: 135px;
-  margin-top:10px;
-  width:100%
+  margin-top: 25px;
+  width: 100%;
 }
 
 
